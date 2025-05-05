@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "sonner";
-import { Analytics } from "@vercel/analytics/react"
-import '@solana/wallet-adapter-react-ui/styles.css';
+import { Analytics } from "@vercel/analytics/react";
+import "@solana/wallet-adapter-react-ui/styles.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,11 +19,21 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://eternalkey.xyz"),
   title: "Eternal Key - Decentralized Crypto Inheritance on Solana",
-  description: "A decentralized dead man's switch for crypto inheritance on Solana. Secure your digital assets' future with automated, trustless transfers to designated beneficiaries.",
-  keywords: ["crypto inheritance", "Solana", "dead man's switch", "digital assets", "blockchain inheritance", "crypto inheritance", "decentralized inheritance"],
+  description:
+    "A decentralized dead man's switch for crypto inheritance on Solana. Secure your digital assets' future with automated, trustless transfers to designated beneficiaries.",
+  keywords: [
+    "crypto inheritance",
+    "Solana",
+    "dead man's switch",
+    "digital assets",
+    "blockchain inheritance",
+    "crypto inheritance",
+    "decentralized inheritance",
+  ],
   openGraph: {
     title: "Eternal Key - Decentralized Crypto Inheritance on Solana",
-    description: "Secure your crypto assets' future with automated, trustless inheritance on Solana. Set up a dead man's switch for your digital assets.",
+    description:
+      "Secure your crypto assets' future with automated, trustless inheritance on Solana. Set up a dead man's switch for your digital assets.",
     url: "https://eternalkey.xyz",
     siteName: "Eternal Key",
     locale: "en_US",
@@ -32,17 +42,26 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Eternal Key - Decentralized Crypto Inheritance on Solana",
-    description: "Secure your crypto assets' future with automated, trustless inheritance on Solana.",
-    creator: "@amritwt",
+    description:
+      "Secure your crypto assets' future with automated, trustless inheritance on Solana.",
+    creator: "@ramkumar_9301",
   },
   icons: {
     icon: [
-      { url: 'favicon.ico', sizes: 'any' },
-      { url: 'android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { url: 'android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+      { url: "favicon.ico", sizes: "any" },
+      {
+        url: "android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
     apple: [
-      { url: 'apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: "apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
   robots: {
@@ -51,9 +70,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
